@@ -1,0 +1,961 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap");
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375;
+  background: #fff;
+}
+
+.no-mar-pad {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.no-mar-padright {
+  padding-right: 0;
+}
+
+.no-mar-padleft {
+  padding-left: 0;
+}
+
+a, a:hover, a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+p {
+  line-height: 1.7;
+}
+
+button:focus {
+  outline: 0px auto -webkit-focus-ring-color;
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
+}
+
+#samsung h1,
+#samsung h2,
+#samsung h3,
+#samsung h4 {
+  font-family: "Amiri", serif;
+  color: #000;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+}
+
+h2 {
+  font-size: 1.7rem;
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  h4 {
+    font-size: 1.1rem;
+  }
+}
+
+::selection {
+  background: #222e3e;
+  color: #fff;
+}
+
+.secGap {
+  padding: 50px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .secGap {
+    padding: 30px 0;
+  }
+}
+
+.viewBtn {
+  background: #71c00e;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  font-size: 1.7rem;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 45px;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+@media only screen and (max-width: 600px) {
+  .viewBtn {
+    font-size: 1.3rem;
+  }
+}
+
+.viewBtn:hover {
+  background: #f9a200;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+#topRibbon,
+#middleRibbon,
+#timerRibbon {
+  text-align: center;
+}
+
+#topRibbon p,
+#middleRibbon p,
+#timerRibbon p {
+  margin-bottom: 0;
+}
+
+#topRibbon {
+  background: #304258;
+  color: #fff;
+}
+
+#topRibbon p {
+  font-size: 0.7rem;
+  padding: 5px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #topRibbon p {
+    font-size: 0.6rem;
+  }
+}
+
+#middleRibbon {
+  background: #71c00e;
+  color: #fff;
+  padding: 15px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #middleRibbon {
+    padding: 10px 0;
+  }
+}
+
+#middleRibbon h1 {
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #middleRibbon h1 {
+    font-size: 1.2rem;
+  }
+}
+
+#timerRibbon {
+  background: #e1e1e1;
+  padding: 5px 0;
+}
+
+#timerRibbon p {
+  font-size: 1.055rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #timerRibbon p {
+    font-size: 0.9rem;
+  }
+}
+
+#footerWrap {
+  padding: 20px 0;
+  text-align: center;
+}
+
+#footerWrap h1 {
+  font-size: 1.7rem;
+  margin: 25px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #footerWrap h1 {
+    font-size: 1.4rem;
+    margin: 15px 0;
+  }
+}
+
+#footerWrap p {
+  font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #footerWrap p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  #showCase .container.outspread {
+    max-width: 1315px;
+  }
+}
+
+#showCase .offer {
+  text-align: center;
+  padding-right: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+  #showCase .offer {
+    padding-right: 15px;
+    text-align: right;
+  }
+}
+
+#showCase .offer .btn {
+  background: #c10700;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: text;
+}
+
+@media only screen and (max-width: 600px) {
+  #showCase .offer .btn {
+    position: absolute;
+    top: -15px;
+    right: 15px;
+  }
+}
+
+#showCase .offer .showPhone {
+  position: relative;
+}
+
+#showCase .offer .showPhone .payPrize {
+  position: absolute;
+  bottom: 40px;
+  left: -15px;
+  width: 140px;
+  height: 140px;
+  background: #63a80c;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  #showCase .offer .showPhone .payPrize {
+    bottom: 85px;
+  }
+}
+
+#showCase .offer .showPhone .payPrize p {
+  margin-bottom: 0;
+}
+
+#showCase .offer .showPhone .payPrize h2 {
+  margin: 5px 0;
+}
+
+#showCase .disCov h1 {
+  font-size: 2.1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #showCase .disCov h1 {
+    font-size: 1.5rem;
+  }
+}
+
+#showCase .disCov hr {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#showCase .disCov .stockDis h1 {
+  font-size: 2.3rem;
+  color: #c10700;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  #showCase .disCov .stockDis h1 {
+    font-size: 1.5rem;
+  }
+}
+
+#showCase .disCov .stockDis p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  #showCase .disCov .stockDis p {
+    font-size: 1rem;
+  }
+}
+
+#showCase .disCov .stockDis .gbButtons {
+  display: flex;
+}
+
+#showCase .disCov .stockDis .gbButtons .btn {
+  background: transparent;
+  border: 1px solid #adadad;
+  border-radius: 0;
+  padding: 10px 30px;
+  margin-right: 6px;
+  text-align: center;
+  flex: 1;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  #showCase .disCov .stockDis .gbButtons .btn {
+    font-size: 0.85rem;
+  }
+}
+
+#showCase .disCov .stockDis .gbButtons .btn:hover {
+  border: 1px solid #ec9133;
+}
+
+@media only screen and (max-width: 600px) {
+  #showCase .disCov .stockDis .gbButtons .btn br {
+    display: none;
+  }
+}
+
+#showCase .disCov .stockDis ul {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+#showCase .disCov .stockDis ul li {
+  line-height: 1.7;
+}
+
+@media only screen and (max-width: 600px) {
+  #showCase .disCov .stockDis ul li {
+    font-size: 0.9rem;
+  }
+}
+
+#showCase .reciveForm {
+  background: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  #showCase .reciveForm {
+    margin-left: 0;
+  }
+}
+
+#showCase .reciveForm .topDis {
+  background: #222e3e;
+  text-align: center;
+  color: #fff;
+  padding: 25px 15px;
+}
+
+#showCase .reciveForm .topDis h3 {
+  margin: 0;
+  font-size: 1.055rem;
+}
+
+#showCase .reciveForm #sweepsTake {
+  padding: 15px;
+  text-align: center;
+}
+
+#showCase .reciveForm #sweepsTake label {
+  font-size: 0.8rem;
+  float: left;
+}
+
+#showCase .reciveForm #sweepsTake .form-control {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+#showCase .reciveForm #sweepsTake .viewBtn {
+  font-size: 1.5rem;
+  padding: 8px 70px;
+  margin: 20px 0;
+  text-shadow: 1px 1px 1px #000;
+  box-shadow: 1px 1px 1px 0px #00000059;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  #showCase .reciveForm #sweepsTake .viewBtn {
+    font-size: 1.3rem;
+  }
+}
+
+#showCase .reciveForm #sweepsTake .errorMessage p {
+  font-size: 0.8rem;
+  color: #c10700;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-top: -5px;
+  display: none;
+}
+
+#showCase .reciveForm #sweepsTake .stepTwo {
+  display: none;
+}
+
+#showCase .reciveForm #sweepsTake .stepTwo .viewBtn {
+  padding: 8px 30px;
+}
+
+#showCase .reciveForm #sweepsTake .stepTwo .form-control {
+  height: 35px;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #showCase .reciveForm #sweepsTake .stepTwo .form-control {
+    margin-bottom: 0px;
+  }
+}
+
+#showCase .reciveForm #sweepsTake .stepTwo .stTwo {
+  margin-bottom: 15px;
+}
+
+#showCase .reciveForm #sweepsTake .stepTwo .stTwo h3 {
+  font-size: 1.2rem;
+}
+
+#showCase .reciveForm #sweepsTake .stepTwo .stTwo h1 {
+  color: #29b5ce;
+  font-weight: 600;
+}
+
+#showCase .reciveForm #sweepsTake .stepTwo .stTwo h1 span {
+  font-size: 20px;
+  color: #333;
+}
+
+#showCase .reciveForm #sweepsTake .stepTwo .errorMessage p {
+  text-align: center;
+}
+
+#showCase .reciveForm .capacity {
+  margin: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f9a200;
+  font-size: 0.9rem;
+  display: flow-root;
+  font-weight: 500;
+}
+
+#showCase .reciveForm .capacity .left {
+  float: left;
+}
+
+#showCase .reciveForm .capacity .right {
+  float: right;
+}
+
+#showCase .reciveForm .secureBy {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #ddd;
+}
+
+#showCase .reciveForm .secureBy img {
+  height: 33px;
+}
+
+@media only screen and (max-width: 600px) {
+  #showCase .reciveForm .secureBy img {
+    height: 28px;
+  }
+}
+
+.rating i {
+  color: #f9a200;
+  margin-right: 3px;
+}
+
+#newG {
+  background: #222e3e;
+  color: #fff;
+  text-align: center;
+}
+
+#newG h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 1.7rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #newG h1 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+  }
+}
+
+#newG img {
+  margin-bottom: -50px;
+  margin-top: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+  #newG img {
+    margin-bottom: -30px;
+  }
+}
+
+#newG .viewBtn {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  #newG p {
+    font-size: 0.9rem;
+  }
+}
+
+#timerHolder {
+  background: #292929;
+  height: 12px;
+}
+
+#timerHolder #timer {
+  display: none;
+  position: relative;
+  z-index: 1;
+  top: 14px;
+  padding-left: 34.8%;
+}
+
+@media only screen and (max-width: 600px) {
+  #timerHolder #timer {
+    padding-left: inherit;
+    justify-content: center;
+    top: 30px;
+  }
+}
+
+#timerHolder #timer .timerBox {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 10px;
+  font-size: 12px;
+  color: #ff9800;
+  border: 1px solid #fff;
+  line-height: 1;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 600px) {
+  #timerHolder #timer .timerBox {
+    width: 40px;
+    height: 40px;
+    font-size: 10px;
+  }
+}
+
+#timerHolder #timer .timerBox:not(:last-child)::after {
+  content: ":";
+  position: absolute;
+  right: -14px;
+  font-size: 25px;
+  color: #fff;
+}
+
+#timerHolder #timer .timerBox span {
+  font-size: 23px;
+  color: #fff;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+  #timerHolder #timer .timerBox span {
+    font-size: 17px;
+  }
+}
+
+#topBanner {
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  #topBanner {
+    background: none !important;
+  }
+}
+
+#topBanner .formHolder {
+  justify-content: flex-end;
+}
+
+#topBanner .formCov {
+  background: rgba(255, 255, 255, 0.68);
+  padding: 35px 50px;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  #topBanner .formCov {
+    background: #dbdbdb;
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+#topBanner .formCov h1 {
+  font-size: 2.3rem;
+  margin: 0;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #topBanner .formCov h1 {
+    font-size: 1.4rem;
+    margin-top: 60px;
+  }
+}
+
+#topBanner .formCov hr {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-top: 2px solid #333;
+}
+
+@media only screen and (max-width: 600px) {
+  #topBanner .formCov hr {
+    margin-top: 1rem;
+  }
+}
+
+#topBanner .formCov .form-control {
+  height: 48px;
+  padding: 0.375rem 1.75rem;
+  border-radius: 25px;
+  margin-bottom: 13px;
+}
+
+@media only screen and (max-width: 600px) {
+  #topBanner .formCov .form-control {
+    height: 44px;
+    padding: 0.375rem 1.75rem;
+    font-size: 15px;
+  }
+}
+
+#topBanner .formCov .errorMessage p {
+  padding-bottom: 0;
+  font-size: 14px;
+  color: #ce0000;
+  margin-top: -8px;
+  padding: 0 20px;
+}
+
+#topBanner .formCov .viewBtn {
+  background: transparent;
+  border: 3px solid #333;
+  border-radius: 33px;
+  padding: 11px 53px;
+  text-transform: capitalize;
+  font-size: 20px;
+  color: #333;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  #topBanner .formCov .viewBtn {
+    padding: 9px 48px;
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+}
+
+#topBanner .formCov .c_mark {
+  margin-top: -5px;
+}
+
+#topBanner .formCov .c_mark label {
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  #topBanner .formCov .c_mark label {
+    font-size: 11px;
+  }
+}
+
+#topBanner .formCov .c_mark label a {
+  color: #0101bd;
+  text-decoration: underline;
+}
+
+#topBanner .formCov .c_mark label a:hover {
+  text-decoration: none;
+}
+
+#topBanner .formCov .formMessage p {
+  font-size: 21px;
+  margin-bottom: 10px;
+  color: #4e4e4e;
+  font-family: "Amiri", serif;
+}
+
+@media only screen and (max-width: 600px) {
+  #topBanner .formCov .formMessage p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
+
+#topBanner .formCov .stepTwo {
+  display: none;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  #topBanner .formCov .stepTwo label {
+    float: left;
+    font-size: 13px;
+  }
+}
+
+.mobileImage {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobileImage {
+    display: block;
+  }
+}
+
+#sam_battery {
+  text-align: center;
+  padding-top: 35px;
+  background: whitesmoke;
+}
+
+#sam_battery h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 15px 0;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #sam_battery h1 {
+    font-size: 1.3rem;
+  }
+}
+
+#sam_battery h3 {
+  font-size: 1.9rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #sam_battery h3 {
+    font-size: 1.1rem;
+  }
+}
+
+#sam_battery p {
+  font-family: "Amiri", serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 600px) {
+  #sam_battery p {
+    font-size: 1.1rem;
+  }
+  #sam_battery p br {
+    display: none;
+  }
+}
+
+#cameraWrap .imageCov {
+  background: #090b0a;
+  padding: 0;
+}
+
+#cameraWrap .rightContent {
+  background: #e8e8e8;
+  padding: 20px 50px;
+  padding-bottom: 0;
+}
+
+#cameraWrap .rightContent img {
+  height: 131px;
+}
+
+@media only screen and (max-width: 600px) {
+  #cameraWrap .rightContent img {
+    height: auto;
+  }
+}
+
+#cameraWrap h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 15px 0;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #cameraWrap h1 {
+    font-size: 1.3rem;
+  }
+}
+
+#cameraWrap h3 {
+  font-size: 1.9rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #cameraWrap h3 {
+    font-size: 1.1rem;
+  }
+}
+
+#cameraWrap p {
+  font-family: "Amiri", serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 600px) {
+  #cameraWrap p {
+    font-size: 1.1rem;
+  }
+}
+
+#qualityWrap {
+  text-align: center;
+}
+
+#qualityWrap h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 15px 0;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  #qualityWrap h1 {
+    font-size: 1.2rem;
+  }
+}
+
+#qualityWrap p {
+  font-family: "Amiri", serif;
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 600px) {
+  #qualityWrap p {
+    font-size: 1rem;
+  }
+}
+
+#samFooter {
+  background: #000;
+  text-align: center;
+  color: #fff;
+}
+
+#samFooter p {
+  font-size: 0.9rem;
+  margin: 15px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #samFooter p {
+    font-size: 0.8rem;
+    margin: 10px 0;
+  }
+}
+
+#samFooter p a {
+  padding: 0 10px;
+}
+
+#samFooter p a:hover {
+  color: #e4e4e4;
+}
+/*# sourceMappingURL=main.css.map */

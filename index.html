@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html class="support-no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/phone1.png" />
+    <title>This is your chance to win</title>
+    <!-- css_link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <section id="topRibbon">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <p>
+                2 day trial subscription to Skillgamez.co which will be billed
+                monthly thereafter if not canceled
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="middleRibbon">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1>Get the latest iPhone 12</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="timerRibbon">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <p>
+                🔔 ATTENTION: DUE TO GREAT MEDIA ATTENTION, THIS QUEUE CLOSES IN
+                <span id="timer"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section id="showCase" class="secGap">
+        <div class="container outspread">
+          <div class="row">
+            <div class="col-sm-4 offer">
+              <div class="showPhone">
+                <div class="payPrize">
+                  <p>Pay Only</p>
+                  <h2>$1.99</h2>
+                  <p>$995</p>
+                </div>
+                <img src="./images/phone2.jpg" class="img-fluid" alt="image" />
+              </div>
+              <a class="btn"> 🔔 Special Offer</a>
+            </div>
+            <div class="col-sm-8">
+              <div class="row">
+                <div class="col-sm-6 disCov">
+                  <h1>Apple iPhone 12 Pro</h1>
+                  <div class="rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </div>
+                  <hr />
+                  <div class="stockDis">
+                    <h1>ⓘ 3 in stock.</h1>
+                    <p>Choose the capacity</p>
+                    <div class="gbButtons">
+                      <button class="btn" onclick="getcapacity(128)">
+                        <span>128</span> <br />
+                        GB
+                      </button>
+                      <button class="btn" onclick="getcapacity(256)">
+                        <span>256</span> <br />
+                        GB
+                      </button>
+                      <button class="btn" onclick="getcapacity(512)">
+                        <span>512</span> <br />
+                        GB
+                      </button>
+                    </div>
+                    <ul>
+                      <li>6.7 "(diagonal) Super Retina XDR.</li>
+                      <li>Apple A14 Bionic chip.</li>
+                      <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                      </li>
+                      <li>Non-removable Li-Ion battery</li>
+                      <li>
+                        A, cumque! Itaque voluptatibus laborum ipsum molestias
+                        minima
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="reciveForm">
+                    <div class="topDis">
+                      <h3>Where do you want to receive the product?</h3>
+                    </div>
+                    <div class="capacity">
+                      <div class="left">Capacity : <span>128 GB</span></div>
+                      <div class="right">color : White</div>
+                    </div>
+
+                    <form id="sweepsTake">
+                      <div class="continue">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="First Name"
+                        />
+                        <div class="errorMessage"><p></p></div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Last Name"
+                        />
+                        <div class="errorMessage"><p>message</p></div>
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Email"
+                        />
+                        <div class="errorMessage"><p>message</p></div>
+                        <input
+                          type="number"
+                          class="form-control"
+                          placeholder="Phone"
+                        />
+                        <!-- <div class="errorMessage"><p>error Message</p></div> -->
+                        <a id="continue" class="btn viewBtn"> Continue </a>
+                      </div>
+                      <div class="stepTwo">
+                        <div class="stTwo">
+                          <h3>Simply Reply</h3>
+                          <h1>GET <span>to </span> 57604</h1>
+                          <h3>to get access now</h3>
+                        </div>
+                        <div class="errorMessage"><p>error Message</p></div>
+                      </div>
+                    </form>
+                    <div class="secureBy">
+                      <img
+                        src="./images/pay01.png"
+                        class="img-fluid"
+                        alt="image"
+                      />
+                      <img
+                        src="./images/pay02.png"
+                        class="img-fluid"
+                        alt="image"
+                      />
+                      <img
+                        src="./images/pay03.png"
+                        class="img-fluid"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="newG" class="secGap">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1>The new generation iPhone is here</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                cumque! Itaque voluptatibus laborum ipsum molestias minima
+                recusandae corporis illo commodi eos soluta eius perferendis
+                fugiat, perspiciatis, cupiditate ducimus optio iste! Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. A, cumque! Itaque
+                voluptatibus laborum ipsum molestias minima recusandae corporis
+                illo commodi eos soluta eius perferendis fugiat, perspiciatis,
+                cupiditate ducimus optio iste!
+              </p>
+              <a href="#" class="btn viewBtn">Get this one</a>
+            </div>
+            <div class="col-sm-12">
+              <img src="./images/phone1.png" class="img-fluid" alt="image" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="footerWrap">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1>Participate before it's too late!</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repudiandae culpa similique quae facilis aspernatur tempora
+                mollitia? Numquam rerum illum praesentium a esse sunt
+                perspiciatis sint facere, quasi id commodi odio!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repudiandae culpa similique quae facilis aspernatur tempora
+                mollitia? Numquam rerum illum praesentium a esse sunt
+                perspiciatis sint facere, quasi id commodi odio! Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit. Repudiandae culpa
+                similique quae facilis aspernatur tempora mollitia? Numquam
+                rerum illum praesentium a esse sunt perspiciatis sint facere,
+                quasi id commodi odio!
+              </p>
+              <p>
+                Copyright © 2020 Skillgamez.co - Robrea Oasis Greens LLC, 3735
+                Franklin Road, SW 225, Roanoke, VA United States 24014
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- js cdn_link -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/timer.js"></script>
+    <script src="./js/choose.js"></script>
+    <script src="./js/paymentshow.js"></script>
+    <script src="./js/footer.js"></script>
+  </body>
+</html>

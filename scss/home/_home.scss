@@ -1,0 +1,268 @@
+#showCase {
+  @include responsive(for-wider-container-fluid) {
+    .container.outspread {
+      max-width: 1315px;
+    }
+  }
+  .offer {
+    text-align: center;
+    padding-right: 150px;
+    @include responsive(phone) {
+      padding-right: 15px;
+      text-align: right;
+    }
+    .btn {
+      background: #c10700;
+      border-radius: 25px;
+      color: #fff;
+      font-size: 0.9rem;
+      cursor: text;
+      @include responsive(phone) {
+        position: absolute;
+        top: -15px;
+        right: 15px;
+      }
+    }
+    .showPhone {
+      position: relative;
+      .payPrize {
+        position: absolute;
+        bottom: 40px;
+        left: -15px;
+        width: 140px;
+        height: 140px;
+        background: darken($secondary-color, 5%);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 50%;
+        @include responsive(phone) {
+          bottom: 85px;
+        }
+        p {
+          margin-bottom: 0;
+        }
+        h2 {
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+  .disCov {
+    h1 {
+      font-size: 2.1rem;
+      @include responsive(phone) {
+        font-size: 1.5rem;
+      }
+    }
+    hr {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    .stockDis {
+      h1 {
+        font-size: 2.3rem;
+        color: #c10700;
+        margin-bottom: 5px;
+        @include responsive(phone) {
+          font-size: 1.5rem;
+        }
+      }
+      p {
+        font-size: 1.1rem;
+        font-weight: 500;
+        @include responsive(phone) {
+          font-size: 1rem;
+        }
+      }
+      .gbButtons {
+        display: flex;
+        .btn {
+          background: transparent;
+          border: 1px solid #adadad;
+          border-radius: 0;
+          padding: 10px 30px;
+          margin-right: 6px;
+          text-align: center;
+          flex: 1;
+          font-size: 0.9rem;
+          line-height: 1.5;
+          font-weight: 500;
+          @include responsive(phone) {
+            font-size: 0.85rem;
+          }
+          &:hover {
+            border: 1px solid #ec9133;
+          }
+          br {
+            @include responsive(phone) {
+              display: none;
+            }
+          }
+        }
+      }
+      ul {
+        margin-top: 20px;
+        padding-left: 20px;
+        li {
+          line-height: 1.7;
+          @include responsive(phone) {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+  .reciveForm {
+    background: #f5f5f5;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 40px;
+    @include responsive(phone) {
+      margin-left: 0;
+    }
+    .topDis {
+      background: $primary-color;
+      text-align: center;
+      color: #fff;
+      padding: 25px 15px;
+      h3 {
+        margin: 0;
+        font-size: 1.055rem;
+      }
+    }
+    #sweepsTake {
+      padding: 15px;
+      text-align: center;
+      label {
+        font-size: 0.8rem;
+        float: left;
+      }
+      .form-control {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+      }
+      .viewBtn {
+        font-size: 1.5rem;
+        padding: 8px 70px;
+        margin: 20px 0;
+        text-shadow: 1px 1px 1px #000;
+        box-shadow: 1px 1px 1px 0px #00000059;
+        border: 2px solid #fff;
+        color: #fff;
+        @include responsive(phone) {
+          font-size: 1.3rem;
+        }
+      }
+      .errorMessage {
+        p {
+          font-size: 0.8rem;
+          color: #c10700;
+          margin-bottom: 10px;
+          text-align: left;
+          margin-top: -5px;
+          display: none;
+        }
+      }
+      .stepTwo {
+        display: none;
+        .viewBtn {
+          padding: 8px 30px;
+        }
+        .form-control {
+          height: 35px;
+          display: inline-block;
+          margin-bottom: 0;
+          @include responsive(phone) {
+            margin-bottom: 0px;
+          }
+        }
+        .stTwo{
+          margin-bottom: 15px;
+          h3{
+            font-size: 1.2rem;
+          }
+          h1{
+            color: #29b5ce;
+            font-weight: 600;
+            span{
+              font-size: 20px;
+              color: #333;
+            }
+          }
+        }
+        .errorMessage {
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+    .capacity {
+      margin: 15px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #f9a200;
+      font-size: 0.9rem;
+      display: flow-root;
+      font-weight: 500;
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+    }
+    .secureBy {
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      border-top: 2px solid #ddd;
+      img {
+        height: 33px;
+        @include responsive(phone) {
+          height: 28px;
+        }
+      }
+    }
+  }
+}
+
+.rating {
+  i {
+    color: #f9a200;
+    margin-right: 3px;
+  }
+}
+
+#newG {
+  background: $primary-color;
+  color: #fff;
+  text-align: center;
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+    @include responsive(phone) {
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+    }
+  }
+  img {
+    margin-bottom: -50px;
+    margin-top: 35px;
+    @include responsive(phone) {
+      margin-bottom: -30px;
+    }
+  }
+  .viewBtn {
+    margin-top: 20px;
+  }
+  p {
+    @include responsive(phone) {
+      font-size: 0.9rem;
+    }
+  }
+}

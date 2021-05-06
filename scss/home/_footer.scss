@@ -1,0 +1,18 @@
+#footerWrap {
+  padding: 20px 0;
+  text-align: center;
+  h1 {
+    font-size: 1.7rem;
+    margin: 25px 0;
+    @include responsive(phone) {
+      font-size: 1.4rem;
+      margin: 15px 0;
+    }
+  }
+  p {
+    font-size: 0.9rem;
+    @include responsive(phone) {
+      font-size: 0.8rem;
+    }
+  }
+}
