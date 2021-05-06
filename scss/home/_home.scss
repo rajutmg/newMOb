@@ -144,6 +144,76 @@
         font-size: 0.8rem;
         margin-bottom: 10px;
       }
+      .contentReady{
+        text-align: left;
+        h2{
+          text-align: center;
+          border-bottom:1px solid #e7e7e7;
+          padding-bottom: 15px;
+          margin-bottom: 15px;
+          font-size: 24px;
+        }
+        ol{
+          list-style: none;
+          counter-reset: item;
+          line-height: 1.7;
+          li{
+            counter-increment: item;
+            margin-bottom: 5px;
+            position: relative;
+            &::before{
+              content: counter(item);
+              background: #71c00e;
+              border-radius: 100%;
+              color: white;
+              width: 25px;
+              height: 25px;
+              padding: 1px;
+              font-size: 13px;
+              text-align: center;
+              display: flex;
+              position: absolute;
+              left: -30px;
+              justify-content: center;
+              flex-direction: column;
+            }
+          }
+        }
+      }
+      .frame{
+        -webkit-animation: zoomeffect 3s infinite;
+        -moz-animation: zoomeffect 3s infinite;
+        animation: zoomeffect 3s infinite;
+        padding: 10px 17px !important;
+        font-size: 20px !important;
+}
+    
+     @keyframes zoomeffect{
+         0%{
+           background-position:center;
+           transform:scale(1,1);
+           -webkit-transform:scale(1,1);
+           -moz-transform:scale(1,1);
+           -ms-transform:scale(1,1);
+           -o-transform:scale(1,1);
+}
+         50%{
+           background-position:center;
+           transform:scale(1.1,1.1);
+           -webkit-transform:scale(1.1,1.1);
+           -moz-transform:scale(1.1,1.1);
+           -ms-transform:scale(1.1,1.1);
+           -o-transform:scale(1.1,1.1);
+}
+         100%{
+           background-position:center;
+           transform:scale(1,1);
+           -webkit-transform:scale(1,1);
+           -moz-transform:scale(1,1);
+           -ms-transform:scale(1,1);
+           -o-transform:scale(1,1);
+}
+     }
       .viewBtn {
         font-size: 1.5rem;
         padding: 8px 70px;
